@@ -366,12 +366,14 @@ header .form i{
 	}
 	.design .image img{
 		position: relative;
-		bottom: -300px;
+		bottom: -315px;
+        left: -125px;
 	}
 	.design .text{
 		position: absolute;
 		width: 100%;
 		top: 35px;
+		text-align: center;
 	}
 }
 .design .text h2{
@@ -392,3 +394,212 @@ header .form i{
 	margin-right: 10px;
 }
 /* end design */
+/* start portfolio */
+.portfolio{
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+}
+.portfolio .shuffle{
+	display: flex;
+	justify-content: center;
+}
+.portfolio .shuffle li{
+	padding: 10px 20px;
+}
+.portfolio .shuffle li.active{
+	background-color: var(--main-color);
+	color: white;
+}
+.portfolio .images-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+.portfolio .images-container .box{
+	position: relative;
+	overflow: hidden;
+}
+.portfolio .images-container .box:hover .caption{
+	bottom: 0;
+}
+.portfolio .images-container .box:hover img{
+	transform: rotate(3deg) scale(1.1);
+}
+@media (min-width: 768px) {
+	.portfolio .images-container .box{
+		flex-basis: 50%;
+	}
+}
+@media (min-width: 1199px) {
+	.portfolio .images-container .box{
+		flex-basis: 25%;
+	}
+}
+.portfolio .images-container .box img{
+	max-width: 100%;
+	transition: 0.3s;
+}
+.portfolio .images-container .caption{
+	position: absolute;
+	left: 0;
+	padding: 20px;
+	background-color: white;
+	width: 100%;
+	bottom: -100%;
+	transition: 0.3s;
+}
+.portfolio .images-container .caption h4{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.portfolio .images-container .caption p{
+	color: var(--main-color);
+}
+.portfolio .more{
+	background-color: var(--main-color);
+	color: white;
+	padding: 15px 20px;
+	display: block;
+	margin: 30px auto;
+	width: fit-content;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/* end portfolio */
+
+/* start video */
+.video{
+	position: relative;
+}
+.video::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 /50%);
+}
+.video video{
+	width: 150%;
+	max-width: 100%;
+}
+.video .text{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+	text-align: center;
+	background-color: var(--transparent-color);
+	color: white;
+}
+.video .text h2{
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.video .text p{
+	margin-bottom: 20px;
+}
+.video .text button{
+	background-color: black;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 20px;
+	transition: 0.3s;
+}
+.video .text button:hover{
+	background-color: #504d4d;
+}
+/* end video */
+
+/* start about */
+.about{
+	padding-top: var(--section-padding);
+	text-align: center;
+	overflow: hidden;
+}
+.about img{
+	position: relative;
+	bottom: -60px;
+	width: 350px;
+	max-width: 100%;
+	margin-top: -60px;
+}
+@media (max-width:767px) {
+	.about img{
+		bottom: -30px;
+		margin-top: -30px;
+	}
+}
+/* end about */
+
+/* start stats */
+.stats{
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+	text-align: center; 
+	background-image: url(../images/stat-background.jpg);
+	background-size: cover;
+	position: relative;
+}
+.stats::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 /50%);
+}
+.stats .container{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.stats .container .box{
+	padding: 50px;
+	background-color: var(--transparent-color);
+	color: white;
+}
+@media (max-width:767px) {
+	.stats .container .box{
+		flex-basis: 100%;
+		margin-bottom: 20px;
+	}
+}
+@media (min-width:768px) {
+	.stats .container .box{
+		flex-basis: 50%;
+	}
+}
+@media (min-width:992px) {
+	.stats .container .box{
+		flex-basis: 25%;
+	}
+}
+.stats .container .box i{
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 30px;
+	border-radius: 50%;
+}
+.stats .container .box .num{
+	font-weight: bold;
+	font-size: 40px;
+	margin: 0 0 20px;
+}
+.stats .container .box p{
+	font-size: 14px;
+}
+/* end stats */
+
+/* start skills */
+
+/* end skills */
