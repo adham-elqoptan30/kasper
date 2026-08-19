@@ -191,7 +191,7 @@ header .form i{
 .landing{
 	position: relative;
 	min-height: 100vh;
-	background-image: url(../Images/landing-background.jpg);
+	background-image: url(../images/landing-background.jpg);
 	background-color:rgb(65, 64, 64) ;
 	background-size: cover;
 }
@@ -851,7 +851,7 @@ header .form i{
 .subscribe{
 	padding-top: var(--section-padding);
 	padding-bottom: var(--section-padding);
-	background-image: url(/images/subscribe-background.jpg);
+	background-image: url(../images/subscribe-background.jpg);
 	background-size: cover;
 	position: relative;
 	color: white;
